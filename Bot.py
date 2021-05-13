@@ -32,7 +32,7 @@ text_work="I am looking for my first junior job in the software field as: a prog
           " So if you are looking for a person who likes to work with high self-learning who will not give up any piece of task and will not rest until the task is completed I would be happy to send a resume."
 
 # Social - Media
-telegram = "https://telegram.me/{}".format("userTeelegram")
+telegram = "https://telegram.me/{}".format("<@username>_(without '@')>")
 github = "https://github.com/roypu1998"
 linkedin = "https://www.linkedin.com/in/roi-putterman-7024591b4/"
 instagram = "https://www.instagram.com/roiputterman/"
@@ -41,7 +41,7 @@ facebook = "https://www.facebook.com/royputterman1/"
 # Contact
 whatsapp = "https://api.whatsapp.com/send?phone=+972505710075&amp;text=Hello! I would be happy if we could set to speak :)"
 email = "royputtermanjob@gmail.com"
-phone = "0505710075"
+phone = "<your_phone"
 
 markup = MarkUp.MarkUp()
 
