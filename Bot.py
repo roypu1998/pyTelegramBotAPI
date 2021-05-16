@@ -5,7 +5,7 @@ import MarkUp
 
 
 
-TOKEN = "1234275965:AAFYp9xlcK9E6GzOvV2p2Hoa51DapuSYkY0"
+TOKEN = "<your_TOKEN>"
 
 bot=TeleBot(TOKEN)
 
@@ -41,7 +41,7 @@ hb_txt_work="אני מחפש את העבודה הראשונה שלי כג'וני
           "אז אם אתם מחפשים אדם שאוהב לעבוד עם למידה עצמית גבוהה שלא יוותר על שום פרויקט ולא ינוח עד לסיום המשימה, אשמח לשלוח קורות חיים."
 
 # Social - Media
-telegram = "https://telegram.me/{}".format("userTeelegram")
+telegram = "https://telegram.me/{}".format("<username_telegram>")
 github = "https://github.com/roypu1998"
 linkedin = "https://www.linkedin.com/in/roi-putterman-7024591b4/"
 instagram = "https://www.instagram.com/roiputterman/"
@@ -50,7 +50,7 @@ facebook = "https://www.facebook.com/royputterman1/"
 # Contact
 whatsapp = "https://api.whatsapp.com/send?phone=+972505710075&amp;text=Hello! I would be happy if we could set to speak :)"
 email = "royputtermanjob@gmail.com"
-phone = "0505710075"
+phone = "<your_phone>"
 
 markup = MarkUp.MarkUp()
 
