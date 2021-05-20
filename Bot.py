@@ -5,7 +5,7 @@ import MarkUp
 
 
 
-TOKEN = "<your_TOKEN>"
+TOKEN = "1234275965:AAFYp9xlcK9E6GzOvV2p2Hoa51DapuSYkY0"
 
 bot=TeleBot(TOKEN)
 
@@ -41,7 +41,7 @@ hb_txt_work="אני מחפש את העבודה הראשונה שלי כג'וני
           "אז אם אתם מחפשים אדם שאוהב לעבוד עם למידה עצמית גבוהה שלא יוותר על שום פרויקט ולא ינוח עד לסיום המשימה, אשמח לשלוח קורות חיים."
 
 # Social - Media
-telegram = "https://telegram.me/{}".format("<username_telegram>")
+telegram = "https://telegram.me/{}".format("userTeelegram")
 github = "https://github.com/roypu1998"
 linkedin = "https://www.linkedin.com/in/roi-putterman-7024591b4/"
 instagram = "https://www.instagram.com/roiputterman/"
@@ -50,7 +50,7 @@ facebook = "https://www.facebook.com/royputterman1/"
 # Contact
 whatsapp = "https://api.whatsapp.com/send?phone=+972505710075&amp;text=Hello! I would be happy if we could set to speak :)"
 email = "royputtermanjob@gmail.com"
-phone = "<your_phone>"
+phone = "0505710075"
 
 markup = MarkUp.MarkUp()
 
@@ -137,7 +137,7 @@ def answer_callback_query(call):
         bot.edit_message_text( text="Choose Option To Contact Me :",chat_id=call.message.chat.id,message_id=call.message.message_id, reply_markup=markup.gen_markup_contact())
 
     elif call.data == "bye":
-        bot.edit_message_text( text="Thank You ! GoodBye 👋",chat_id=call.message.chat.id,message_id=call.message.message_id)
+        bot.edit_message_text( text="Thank You ! GoodBye 👋",chat_id=call.message.chat.id,message_id=call.message.message_id,reply_markup=markup.set_markup_return_menu())
 
         ##########################################################
 
@@ -233,7 +233,7 @@ def answer_callback_query(call):
 
     elif call.data == "b":
         bot.edit_message_text(text="תודה רבה לך ! להתראות 👋", chat_id=call.message.chat.id,
-                                  message_id=call.message.message_id)
+                                  message_id=call.message.message_id,reply_markup=markup.set_markup_return_menu_hb())
 
 
 ##### handle on '/start' command ######
