@@ -5,7 +5,7 @@ import MarkUp
 
 
 
-TOKEN = "1234275965:AAF1En4gwmNS00FQdZTkxDlWCQrBC3XBZ0Q" 
+TOKEN = "your TOKEN API from BotFather" 
 
 bot=TeleBot(TOKEN)
 
