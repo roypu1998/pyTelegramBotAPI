@@ -80,7 +80,7 @@ def answer_callback_query(call):
 
     elif call.data == "resume":
         try:
-            cv_resume = open("files/CV-en.pdf", 'rb')
+            cv_resume = open("files/resume_en.pdf", 'rb')
             bot.send_document(call.message.chat.id,data=cv_resume)
             bot.send_message(chat_id=call.message.chat.id,text="Choose Option You Want :",reply_markup=markup.gen_markup())
             cv_resume.close()
