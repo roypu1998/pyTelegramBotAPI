@@ -1,15 +1,11 @@
 from telebot import TeleBot
-
 import datetime
 import MarkUp
+import os
 
-
-
-TOKEN = "1234275965:AAF1En4gwmNS00FQdZTkxDlWCQrBC3XBZ0Q" #"your TOKEN API from BotFather" 
+TOKEN = os.environ.get('API_TOKEN',None) #"your TOKEN API from BotFather" 
 
 bot=TeleBot(TOKEN)
-
-
 
 def calc_age():
     born = datetime.date(1998,12,17)
